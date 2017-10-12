@@ -1,3 +1,4 @@
+# Discrepancy-Server
 # Service for calculation of discrepancy between of two datasets
 
 ## Summary
@@ -46,7 +47,7 @@ Configuration Files are in lib/config (dev-local.js/test.js):
 
 ## Try the API via CURL
 
-* run: 
+* run:
 ```
 curl \
 -F "jsonCompanyA=@/pathToJsonCompanyA.json" \
@@ -60,7 +61,7 @@ http://localhost:3000/api/discrepancy
 
 ```
 resource: /api/discrepancy
-protocol: POST 
+protocol: POST
 ```
 
 Keys for files (form data attachments):

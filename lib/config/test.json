@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": "3012",
+  "protocol": "http",
+  "cluster_mode": false,
+  "cluster_nodes": 2
+}

@@ -4,9 +4,21 @@
 ## Summary
 
 The implementation of the discrepancy service was developed in nodejs.
-The discrepancy REST API serves the endpoint: /api/discrepancy which takes as input two files (metrics datasets) and
-returns a list of the hours for which a discrepancy higher than a specific percentage in any of the two metrics was detected.
+The discrepancy REST API serves the endpoint: /api/discrepancy which takes as input two files (metrics datasets) having the below format:
+```
+[
+...
+{
+"timestamp": "2016-08-05T00:00:00",
+"impressions": 898,
+"spend": 17.3
+}
+...
+]
+```
+Service returns a list of the hours for which a discrepancy higher than a specific percentage in any of the two metrics was detected.
 The endpoint can be used via Postman app (a toolchain for APIs) : https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
+Find example of datasets in fixtures folder.
 
 ## Prerequisites
 
@@ -136,3 +148,4 @@ you can simply run
 ```
 npm run test-cov
 ```
+

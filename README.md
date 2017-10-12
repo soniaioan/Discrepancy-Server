@@ -4,7 +4,7 @@
 
 The implementation of the discrepancy service was developed in nodejs.
 The discrepancy REST API serves the endpoint: /api/discrepancy which takes as input two files (metrics datasets) and
-returns a list of the hours for which a discrepancy higher than 5% in any of the two metrics was detected.
+returns a list of the hours for which a discrepancy higher than a specific percentage in any of the two metrics was detected.
 The endpoint can be used via Postman app (a toolchain for APIs) : https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
 
 ## Prerequisites
